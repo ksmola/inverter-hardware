@@ -1,0 +1,237 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 2425 3125 0    50   Input ~ 0
+CAN_L
+Text GLabel 3775 3125 2    50   Input ~ 0
+CAN_H
+$Comp
+L Device:R R?
+U 1 1 60EC4A3C
+P 2800 3125
+F 0 "R?" V 2593 3125 50  0000 C CNN
+F 1 "120" V 2684 3125 50  0000 C CNN
+F 2 "" V 2730 3125 50  0001 C CNN
+F 3 "~" H 2800 3125 50  0001 C CNN
+	1    2800 3125
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP?
+U 1 1 60EC5424
+P 3350 3125
+F 0 "JP?" H 3350 3330 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 3350 3239 50  0000 C CNN
+F 2 "" H 3350 3125 50  0001 C CNN
+F 3 "~" H 3350 3125 50  0001 C CNN
+	1    3350 3125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3775 3125 3500 3125
+Wire Wire Line
+	2650 3125 2425 3125
+Wire Wire Line
+	3200 3125 2950 3125
+$Comp
+L Interface_CAN_LIN:SN65HVD230 U?
+U 1 1 60EC6A13
+P 4800 3850
+F 0 "U?" H 4800 4331 50  0000 C CNN
+F 1 "SN65HVD230" H 4800 4240 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4800 3350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn65hvd230.pdf" H 4700 4250 50  0001 C CNN
+	1    4800 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60EC6E1A
+P 4800 4375
+F 0 "#PWR?" H 4800 4125 50  0001 C CNN
+F 1 "GND" H 4805 4202 50  0000 C CNN
+F 2 "" H 4800 4375 50  0001 C CNN
+F 3 "" H 4800 4375 50  0001 C CNN
+	1    4800 4375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 4375 4800 4300
+Wire Wire Line
+	4400 4050 4350 4050
+Wire Wire Line
+	4350 4050 4350 4300
+Wire Wire Line
+	4350 4300 4800 4300
+Connection ~ 4800 4300
+Wire Wire Line
+	4800 4300 4800 4250
+Text GLabel 5525 3950 2    50   Input ~ 0
+CAN_L
+Text GLabel 5525 3850 2    50   Input ~ 0
+CAN_H
+Wire Wire Line
+	5525 3850 5200 3850
+Wire Wire Line
+	5200 3950 5525 3950
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60EC75CC
+P 5100 3450
+F 0 "#PWR?" H 5100 3300 50  0001 C CNN
+F 1 "+3V3" H 5115 3623 50  0000 C CNN
+F 2 "" H 5100 3450 50  0001 C CNN
+F 3 "" H 5100 3450 50  0001 C CNN
+	1    5100 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 3550 4800 3500
+Wire Wire Line
+	4800 3500 5100 3500
+Wire Wire Line
+	5100 3500 5100 3450
+Text GLabel 4250 3750 0    50   Input ~ 0
+CANTX
+Text GLabel 4250 3850 0    50   Input ~ 0
+CANRX
+Wire Wire Line
+	4250 3750 4400 3750
+Wire Wire Line
+	4400 3850 4250 3850
+$Comp
+L RF_Module:ESP32-WROOM-32 U?
+U 1 1 60EC899D
+P 7475 3825
+F 0 "U?" H 7475 5406 50  0000 C CNN
+F 1 "ESP32-WROOM-32" H 7475 5315 50  0000 C CNN
+F 2 "RF_Module:ESP32-WROOM-32" H 7475 2325 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 7175 3875 50  0001 C CNN
+	1    7475 3825
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60EC93A4
+P 7475 5325
+F 0 "#PWR?" H 7475 5075 50  0001 C CNN
+F 1 "GND" H 7480 5152 50  0000 C CNN
+F 2 "" H 7475 5325 50  0001 C CNN
+F 3 "" H 7475 5325 50  0001 C CNN
+	1    7475 5325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7475 5325 7475 5225
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60ECA1BD
+P 7900 2300
+F 0 "#PWR?" H 7900 2150 50  0001 C CNN
+F 1 "+3V3" H 7915 2473 50  0000 C CNN
+F 2 "" H 7900 2300 50  0001 C CNN
+F 3 "" H 7900 2300 50  0001 C CNN
+	1    7900 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 2300 7900 2350
+Wire Wire Line
+	7900 2350 7475 2350
+Wire Wire Line
+	7475 2350 7475 2425
+Text GLabel 8325 2725 2    50   Input ~ 0
+TX
+Text GLabel 8325 2925 2    50   Input ~ 0
+RX
+Wire Wire Line
+	8325 2925 8075 2925
+Wire Wire Line
+	8075 2725 8325 2725
+$Comp
+L Device:C C?
+U 1 1 60ED25F0
+P 8675 3725
+F 0 "C?" H 8790 3771 50  0000 L CNN
+F 1 "10uF" H 8790 3680 50  0000 L CNN
+F 2 "" H 8713 3575 50  0001 C CNN
+F 3 "~" H 8675 3725 50  0001 C CNN
+	1    8675 3725
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60ED2892
+P 8675 3450
+F 0 "#PWR?" H 8675 3300 50  0001 C CNN
+F 1 "+3V3" H 8690 3623 50  0000 C CNN
+F 2 "" H 8675 3450 50  0001 C CNN
+F 3 "" H 8675 3450 50  0001 C CNN
+	1    8675 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60ED2AFD
+P 8675 3975
+F 0 "#PWR?" H 8675 3725 50  0001 C CNN
+F 1 "GND" H 8680 3802 50  0000 C CNN
+F 2 "" H 8675 3975 50  0001 C CNN
+F 3 "" H 8675 3975 50  0001 C CNN
+	1    8675 3975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8675 3975 8675 3875
+Wire Wire Line
+	8675 3575 8675 3450
+$Comp
+L Device:C C?
+U 1 1 60ED486E
+P 3550 4175
+F 0 "C?" H 3665 4221 50  0000 L CNN
+F 1 "1uF" H 3665 4130 50  0000 L CNN
+F 2 "" H 3588 4025 50  0001 C CNN
+F 3 "~" H 3550 4175 50  0001 C CNN
+	1    3550 4175
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60ED4874
+P 3550 3900
+F 0 "#PWR?" H 3550 3750 50  0001 C CNN
+F 1 "+3V3" H 3565 4073 50  0000 C CNN
+F 2 "" H 3550 3900 50  0001 C CNN
+F 3 "" H 3550 3900 50  0001 C CNN
+	1    3550 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60ED487A
+P 3550 4425
+F 0 "#PWR?" H 3550 4175 50  0001 C CNN
+F 1 "GND" H 3555 4252 50  0000 C CNN
+F 2 "" H 3550 4425 50  0001 C CNN
+F 3 "" H 3550 4425 50  0001 C CNN
+	1    3550 4425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 4425 3550 4325
+Wire Wire Line
+	3550 4025 3550 3900
+$EndSCHEMATC

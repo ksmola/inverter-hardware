@@ -1,0 +1,233 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 3100 3125 0    50   Input ~ 0
+TIM3_ETR
+$Comp
+L Device:R R?
+U 1 1 60EAC28E
+P 3375 3125
+F 0 "R?" V 3168 3125 50  0000 C CNN
+F 1 "3k3" V 3259 3125 50  0000 C CNN
+F 2 "" V 3305 3125 50  0001 C CNN
+F 3 "~" H 3375 3125 50  0001 C CNN
+	1    3375 3125
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60EAC478
+P 3850 3125
+F 0 "R?" V 3643 3125 50  0000 C CNN
+F 1 "3k3" V 3734 3125 50  0000 C CNN
+F 2 "" V 3780 3125 50  0001 C CNN
+F 3 "~" H 3850 3125 50  0001 C CNN
+	1    3850 3125
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60EAC5BA
+P 4325 3125
+F 0 "R?" V 4118 3125 50  0000 C CNN
+F 1 "3k3" V 4209 3125 50  0000 C CNN
+F 2 "" V 4255 3125 50  0001 C CNN
+F 3 "~" H 4325 3125 50  0001 C CNN
+	1    4325 3125
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60EAC728
+P 5075 3350
+F 0 "R?" H 5005 3304 50  0000 R CNN
+F 1 "10k" H 5005 3395 50  0000 R CNN
+F 2 "" V 5005 3350 50  0001 C CNN
+F 3 "~" H 5075 3350 50  0001 C CNN
+	1    5075 3350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4600 3125 4550 3125
+Wire Wire Line
+	3225 3125 3100 3125
+Wire Wire Line
+	3700 3125 3600 3125
+Wire Wire Line
+	4175 3125 4075 3125
+$Comp
+L Device:C C?
+U 1 1 60EACE0E
+P 3600 3375
+F 0 "C?" H 3715 3421 50  0000 L CNN
+F 1 "22n" H 3715 3330 50  0000 L CNN
+F 2 "" H 3638 3225 50  0001 C CNN
+F 3 "~" H 3600 3375 50  0001 C CNN
+	1    3600 3375
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60EAD11D
+P 4075 3375
+F 0 "C?" H 4190 3421 50  0000 L CNN
+F 1 "22n" H 4190 3330 50  0000 L CNN
+F 2 "" H 4113 3225 50  0001 C CNN
+F 3 "~" H 4075 3375 50  0001 C CNN
+	1    4075 3375
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60EAD325
+P 4550 3375
+F 0 "C?" H 4665 3421 50  0000 L CNN
+F 1 "22n" H 4665 3330 50  0000 L CNN
+F 2 "" H 4588 3225 50  0001 C CNN
+F 3 "~" H 4550 3375 50  0001 C CNN
+	1    4550 3375
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60EADA96
+P 4750 3125
+F 0 "C?" V 4498 3125 50  0000 C CNN
+F 1 "22n" V 4589 3125 50  0000 C CNN
+F 2 "" H 4788 2975 50  0001 C CNN
+F 3 "~" H 4750 3125 50  0001 C CNN
+	1    4750 3125
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4550 3225 4550 3125
+Connection ~ 4550 3125
+Wire Wire Line
+	4550 3125 4475 3125
+Wire Wire Line
+	4075 3125 4075 3225
+Connection ~ 4075 3125
+Wire Wire Line
+	4075 3125 4000 3125
+Wire Wire Line
+	3600 3225 3600 3125
+Connection ~ 3600 3125
+Wire Wire Line
+	3600 3125 3525 3125
+Wire Wire Line
+	4900 3125 5075 3125
+Wire Wire Line
+	5075 3125 5075 3200
+$Comp
+L power:GND #PWR?
+U 1 1 60EAFA6D
+P 5725 3625
+F 0 "#PWR?" H 5725 3375 50  0001 C CNN
+F 1 "GND" H 5730 3452 50  0000 C CNN
+F 2 "" H 5725 3625 50  0001 C CNN
+F 3 "" H 5725 3625 50  0001 C CNN
+	1    5725 3625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 3525 3600 3575
+Wire Wire Line
+	3600 3575 4075 3575
+Wire Wire Line
+	5725 3575 5725 3625
+Wire Wire Line
+	5075 3500 5075 3575
+Connection ~ 5075 3575
+Wire Wire Line
+	5075 3575 5725 3575
+Wire Wire Line
+	4550 3525 4550 3575
+Connection ~ 4550 3575
+Wire Wire Line
+	4550 3575 5075 3575
+Wire Wire Line
+	4075 3525 4075 3575
+Connection ~ 4075 3575
+Wire Wire Line
+	4075 3575 4550 3575
+Text Notes 3275 2675 0    50   ~ 0
+Resolver Excitation
+$Comp
+L power:+5V #PWR?
+U 1 1 60EBE0BA
+P 3150 3975
+F 0 "#PWR?" H 3150 3825 50  0001 C CNN
+F 1 "+5V" H 3165 4148 50  0000 C CNN
+F 2 "" H 3150 3975 50  0001 C CNN
+F 3 "" H 3150 3975 50  0001 C CNN
+	1    3150 3975
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60EBE262
+P 2950 4225
+F 0 "C?" H 3065 4271 50  0000 L CNN
+F 1 "1uF" H 3065 4180 50  0000 L CNN
+F 2 "" H 2988 4075 50  0001 C CNN
+F 3 "~" H 2950 4225 50  0001 C CNN
+	1    2950 4225
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60EBE45E
+P 3325 4225
+F 0 "C?" H 3440 4271 50  0000 L CNN
+F 1 "100uF" H 3440 4180 50  0000 L CNN
+F 2 "" H 3363 4075 50  0001 C CNN
+F 3 "~" H 3325 4225 50  0001 C CNN
+	1    3325 4225
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60EBEB3E
+P 3150 4475
+F 0 "#PWR?" H 3150 4225 50  0001 C CNN
+F 1 "GND" H 3155 4302 50  0000 C CNN
+F 2 "" H 3150 4475 50  0001 C CNN
+F 3 "" H 3150 4475 50  0001 C CNN
+	1    3150 4475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 4375 2950 4425
+Wire Wire Line
+	2950 4425 3150 4425
+Wire Wire Line
+	3150 4425 3150 4475
+Wire Wire Line
+	3150 4425 3325 4425
+Wire Wire Line
+	3325 4425 3325 4375
+Connection ~ 3150 4425
+Wire Wire Line
+	3325 4075 3325 4025
+Wire Wire Line
+	3325 4025 3150 4025
+Wire Wire Line
+	3150 4025 3150 3975
+Wire Wire Line
+	3150 4025 2950 4025
+Wire Wire Line
+	2950 4025 2950 4075
+Connection ~ 3150 4025
+$EndSCHEMATC
