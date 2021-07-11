@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/kon/src/inverter-hardware/prius_gen2_kicad/prius_gen2.sch)
-    (date "Mon 05 Jul 2021 12:10:20 AM PDT")
+    (date "Mon 05 Jul 2021 04:50:00 PM PDT")
     (tool "Eeschema 5.1.10-1.fc34")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -799,6 +799,7 @@
       (tstamp 60E3A3D8))
     (comp (ref L2)
       (value 10u)
+      (footprint prius_gen2_kicad:MWSA0503)
       (datasheet ~)
       (libsource (lib pspice) (part INDUCTOR) (description "Inductor symbol for simulation only"))
       (sheetpath (names "/Power Supply/") (tstamps /60E19204/))
